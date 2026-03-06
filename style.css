@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white; /* dark black */
+  color: #d9c5b2; /* coffee color text */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 550px;
+  margin: 50px auto;
+  background: #2c1f18; /* coffee dark container */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(217,197,178,0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f5e9de;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #f5e9de;
+}
+
+form input, form textarea, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #d9c5b2;
+  background-color: #2c1f18;
+  color: #f5e9de;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+form button {
+  background-color: #d9c5b2;
+  color: #2c1f18;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #f5e9de;
+}
+
+.payment-info p {
+  margin: 5px 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.copy-icon {
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+  transition: 0.2s;
+}
+
+.copy-icon:hover svg {
+  fill: #f5e9de; /* lighter on hover */
+}
+
+#priceDisplay {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#message {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}

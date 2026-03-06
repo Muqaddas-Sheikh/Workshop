@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshop Registration</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome for copy icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Workshop Registration Form</h2>
+
+<form id="registrationForm">
+
+<label for="firstName">First Name</label>
+<input type="text" id="firstName" name="firstName" required>
+
+<label for="lastName">Last Name</label>
+<input type="text" id="lastName" name="lastName" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" required>
+
+<label for="reason">Why do you want to attend this workshop?</label>
+<textarea id="reason" name="reason" rows="4" required></textarea>
+
+
+<!-- WORKSHOP DAYS -->
+
+<label for="workshopDays">Select Workshop Days</label>
+
+<select id="workshopDays" name="workshopDays" required>
+
+<option value="">Select Days</option>
+<option value="1">1 Day - 100 PKR</option>
+<option value="2">2 Days - 150 PKR</option>
+<option value="3">3 Days - 200 PKR</option>
+
+</select>
+
+<p id="priceDisplay">Price: 0 PKR</p>
+
+
+
+<!-- PAYMENT INFO -->
+
+<div class="payment-info">
+
+<p><strong>JazzCash / EasyPaisa</strong></p>
+
+<p>
+
+<span id="paymentNumber">03015732298 (Muqaddas)</span>
+
+<i class="fa-regular fa-copy copy-icon" data-copy="03001234567 (Muqaddas)"></i>
+
+</p>
+
+</div>
+
+
+
+<!-- RECEIPT -->
+
+<label for="receipt">Upload Receipt</label>
+<input type="file" id="receipt" name="receipt" accept="image/*" required>
+
+
+<button type="submit">Submit</button>
+
+</form>
+
+<div id="message"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
